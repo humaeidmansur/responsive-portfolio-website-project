@@ -78,6 +78,7 @@
 
  .home{
   display:flex;
+  
   align-items:center;
   height: 100%;
   gap: 50px;
@@ -96,14 +97,17 @@
  }
 
  .home-details p {
-margin:20px 0 30px;
+ margin:20px 0 30px;
  }
 
 .home-details .downloed-social{
+  
   display:flex;
   align-items:center; 
+ 
 }
 
+ 
 .btn {
   display: inline-block;
   padding:10px 30px;
@@ -125,6 +129,7 @@ margin:20px 0 30px;
 
 .home-details .social-icon{
 margin-left:20px;
+ 
 }
 
 .home-details .social-icon a{
@@ -161,4 +166,73 @@ margin-left:20px;
   display: block;
   width: 100%;
   object-fit:cover;
+}
+/* ============================= */
+/* Mobile Styles for ≤ 576px     */
+/* ============================= */
+@media (max-width: 576px) {
+
+  /* Body & container padding */
+  body {
+    padding: 20px 3%;
+  }
+
+  .container {
+    border-radius: 15px;
+  }
+
+  /* Header adjustments */
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 3%;
+    gap: 10px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .navbar a {
+    display:none;
+  }
+
+  /* Stack the home section vertically */
+  .home {
+    flex-direction: column;
+    padding: 90px 5% 30px;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .home-image .img-box {
+   display:none;
+  }
+
+  /* Text size adjustments */
+  .home-details h1 {
+    font-size: 34px;
+  }
+
+  .home-details h2 {
+    font-size: 22px;
+  }
+
+  .home-details p {
+    font-size: 14px;
+  }
+
+  /* Social + button arrangement */
+  .home-details, .downloed-social {
+    flex-direction: column;
+    gap: 18px;
+    justify-content: center;
+  }
+
+  .home-details .social-icon {
+    margin-left: 0;
+  }
+
+  /* Resize the profile image */
+
 }
